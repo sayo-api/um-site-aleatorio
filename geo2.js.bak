@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('site_funções'));
+//app.use(express.static('site_funções'));
 
 app.get('/', function(req, res) {
     res.sendFile('geo.html', {root: __dirname })
