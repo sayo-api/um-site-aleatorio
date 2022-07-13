@@ -28,7 +28,7 @@ body {
 	-webkit-transition-duration:2s;
 }
 
-.picselect1{-webkit-transform:rotateY(0deg);}
+.selecioneimg{-webkit-transform:rotateY(0deg);}
 .picselect2{-webkit-transform:rotateY(-72deg);}
 .picselect3{-webkit-transform:rotateY(-144deg);}
 .picselect4{-webkit-transform:rotateY(-216deg);}
@@ -36,9 +36,9 @@ body {
 
 img{width: 245px;height:245px;position:absolute;}
 
-#picture1{-webkit-transform:rotateY(0deg) translateZ(280px);}
-#picture2{-webkit-transform:rotateY(72deg) translateZ(280px);}
-#picture3{-webkit-transform:rotateY(144deg) translateZ(280px);}
+#euiela1{-webkit-transform:rotateY(0deg) translateZ(280px);}
+#euiela2{-webkit-transform:rotateY(72deg) translateZ(280px);}
+#euiela3{-webkit-transform:rotateY(144deg) translateZ(280px);}
 
 .glow-on-hover {
     width: 220px;
@@ -113,10 +113,10 @@ img{width: 245px;height:245px;position:absolute;}
 
 <body>
 	<div id="world">
-    	<div id="album" class="picselect1">
-        	<img src="img/euiela.jpg" id="picture1">
-            <img src="img/euiela2.jpg" id="picture2">
-            <img src="img/euiela3.gif" id="picture3">
+    	<div id="album" class="selecioneimg">
+        	<img src="img/euiela.jpg" id="euiela1">
+            <img src="img/euiela2.jpg" id="euiela2">
+            <img src="img/euiela3.gif" id="euiela3">
         </div>
     </div>
     
@@ -130,7 +130,7 @@ img{width: 245px;height:245px;position:absolute;}
 	</div>
     
     <script type="text/javascript">
-		button1.onclick=function(){album.className="picselect1";}
+		button1.onclick=function(){album.className="selecioneimg";}
 		button2.onclick=function(){album.className="picselect2";}
 		button3.onclick=function(){album.className="picselect3";}
 	</script>

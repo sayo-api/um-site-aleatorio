@@ -1,4 +1,4 @@
-// Alerts 
+
 window.alert('tenho algumas coisas pra falar.')
 let input_user = window.prompt('Preparado? sim ou não?')
 if(input_user.toLowerCase() == 'sim'){
@@ -6,7 +6,6 @@ if(input_user.toLowerCase() == 'sim'){
 else{
     window.alert('Vai do mesmo jeito kkkkk')  
 }
-// Open and Close Messages
 const messages = {
     open_second_message(){
         window.document.querySelector('.first.button').classList.remove('active')

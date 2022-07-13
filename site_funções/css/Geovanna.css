@@ -1,5 +1,3 @@
-/* Reset and General Settings =
------------------------------*/
 
 *{
     padding: 0;
@@ -18,9 +16,6 @@ body {
   background-size: cover
 }
 
-
-/* Button Config ==============
------------------------------*/
 input{
     width: 220px;
     height: 50px;
@@ -117,12 +112,6 @@ input{
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-
-
-/* Text Config ================
------------------------------*/
-
-
 
 h2{
   border-radius: 1rem;
