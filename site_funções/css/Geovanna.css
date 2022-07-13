@@ -1,0 +1,202 @@
+/* Reset and General Settings =
+-----------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Acme', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(https://telegra.ph/file/e15cb42881653a248d1e3.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+
+
+/* Button Config ==============
+-----------------------------*/
+input{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.first.button{
+    visibility: hidden;
+}
+
+.first.button.active{
+    visibility: visible;
+}
+
+.second.button{
+    visibility: hidden;
+}
+
+.second.button.active{
+    visibility: visible;
+}
+
+.third.button{
+    visibility: hidden;
+}
+
+.third.button.active{
+    visibility: visible;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* Text Config ================
+-----------------------------*/
+
+
+
+h2{
+  border-radius: 1rem;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5%;
+  border: 2px solid #fff;
+  text-align: center;
+  font-family: 'cursive', sans-serif;
+  font-size: 20px;
+  color: pink;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 26px red;
+  box-shadow: 0 0 26px rgba(26, 26, 26, 26);    
+  -webkit-box-shadow: 0 0 17px 3px #ff01f7, 0 0 4px 2px #ff01f7;
+  box-shadow: 0 0 17px 3px #ff01f7, 0 0 4px 2px #ff01f7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;  
+}
+
+h1{
+  border-radius: 1rem;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10%;
+  border: 4px solid #fffb05;
+  text-align: center;
+  font-family: 'serif', sans-serif;
+  font-size: 30px;
+  color: red;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 26px red;
+  box-shadow: 0 0 26px rgba(26, 26, 26, 26);    
+  -webkit-box-shadow: 0 0 17px 3px #ff0505, 0 0 4px 2px #ff0505;
+  box-shadow: 0 0 17px 3px #ff0505, 0 0 4px 2px #ff0505;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;  
+}
+
+
+
+
+.second.text{
+    visibility: hidden;
+}
+
+.second.text.active{
+    visibility: visible;
+}
+
+.third.text{
+    visibility: hidden;
+}
+
+.third.text.active{
+    visibility: visible;
+}
+
+.fourth.text{
+    visibility: hidden;
+}
+
+.fourth.text.active{
+    visibility: visible;
+    text-align: center;
+    padding: 0 0 5rem 0;
+}
+
+
