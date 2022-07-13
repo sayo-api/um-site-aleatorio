@@ -116,7 +116,7 @@ img{width: 245px;height:245px;position:absolute;}
     	<div id="album" class="selecioneimg">
         	<img src="img/euiela.jpg" id="euiela1">
             <img src="img/euiela2.jpg" id="euiela2">
-            <img src="img/euiela3.jpg" id="euiela3">
+            <img src="img/euiela3.gif" id="euiela3">
         </div>
     </div>
     
