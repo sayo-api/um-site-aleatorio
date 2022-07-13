@@ -1,10 +1,10 @@
 
 window.alert('tenho algumas coisas pra falar.')
-let input_user = window.prompt('Preparado? sim ou não?')
+let input_user = window.prompt('SUA MSG')
 if(input_user.toLowerCase() == 'sim'){
 }
 else{
-    window.alert('Vai do mesmo jeito kkkkk')  
+    window.alert('SUA MSG')  
 }
 const messages = {
     open_second_message(){
