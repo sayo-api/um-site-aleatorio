@@ -15,5 +15,5 @@ app.get('/pedidodenamoro', async (req, res) => {
     res.sendFile('pedido.html', {root: __dirname })
 });
 
-const porta = 5000
+const porta = process.env.PORT || 5000;
 app.listen(porta, () => console.log("site Online na porta:", porta));
