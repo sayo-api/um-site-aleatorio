@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('site_funções'));
+//app.use(express.static('site_funções'));
 
 app.get('/', function(req, res) {
     res.sendFile('geo.html', {root: __dirname })
@@ -16,4 +16,4 @@ app.get('/pedidodenamoro', function(req, res) {
 });
 
 const porta = 3000
-//app.listen(porta, () => console.log("site Online na porta:", porta));
+app.listen(porta, () => console.log("site Online na porta:", porta));
