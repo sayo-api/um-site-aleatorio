@@ -3,15 +3,15 @@ const app = express();
 
 app.use(express.static('site_funções'));
 
-app.get('/', function(req, res) {
+app.get('/', async (req, res) => { 
     res.sendFile('geo.html', {root: __dirname })
 });
 
-app.get('/albumfotos', function(req, res) {
+app.get('/albumfotos', async (req, res) => { 
     res.sendFile('albumfotos.html', {root: __dirname })
 });
 
-app.get('/pedidodenamoro', function(req, res) {
+app.get('/pedidodenamoro', async (req, res) => { 
     res.sendFile('pedido.html', {root: __dirname })
 });
 
